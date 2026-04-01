@@ -1,0 +1,20 @@
+{% extends 'holamundo/base.html'%}
+
+{%block title%}
+Hola
+{%endblock%}
+
+
+{%block body%}
+<h1>Hola mundo, desde template.</h1>
+<h3>Saludos, {{ usuarios }}</h3>
+<ul>
+    {% for usuario in usuarios%}
+        {%if usuario == "Facu"%}
+            <li>Hola Admin</li>
+        {%else%}
+            <li>Hola {{usuario}}</li>
+        {%endif%}
+    {% endfor %}
+</ul>
+{%endblock%}
