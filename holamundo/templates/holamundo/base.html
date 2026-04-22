@@ -11,7 +11,9 @@
     <nav>
         Soy la navegación....
         <a href="/">saludar</a>
-        <a href="{%block href%}despedir/{%endblock%}">despedir</a>
+        <a href="{%url 'adios' %}">despedir</a>
+        <a href="{%url 'posteos' %}">Posteos</a>
+
     </nav>
 
     {% block body %}
