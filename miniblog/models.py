@@ -1,6 +1,14 @@
 from django.db import models
 
-# Create your models here.
+# Si posteo NO tuviera el def __str__, cuando se lista
+#  (por ejemplo,) en el admin, se vería de la siguiente forma:
+
+#Posteo Object (1)
+
+#Con el __str__ se muestra como el return del método, es decir:
+
+#Mi primer Posteo, 5 likes. 22/04/2026
+
 
 
 class Posteo(models.Model):
